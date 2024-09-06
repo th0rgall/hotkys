@@ -13,9 +13,7 @@ export function KeymapDropdown(props: {
     <List.Dropdown
       tooltip="Select Keymap"
       storeValue={true}
-      onChange={(newValue) => {
-        onKeymapChange(newValue);
-      }}
+      onChange={onKeymapChange}
     >
       <List.Dropdown.Section title="Keymaps">
         {keymaps.map((keymap) => (
